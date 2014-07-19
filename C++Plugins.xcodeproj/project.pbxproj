@@ -8,7 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		9AF65CD3197B02AE0002A688 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AF65CD2197B02AE0002A688 /* main.cpp */; };
+		9AF65CED197B04F30002A688 /* Plugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AF65CE9197B02D20002A688 /* Plugin.cpp */; };
+		9AF65CF2197B06CF0002A688 /* NamePlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AF65CF0197B06CF0002A688 /* NamePlugin.cpp */; };
+		9AF65CF3197B06CF0002A688 /* NamePlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AF65CF1197B06CF0002A688 /* NamePlugin.h */; };
+		9AF65CFD197B08D30002A688 /* PrintPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AF65CFB197B08D30002A688 /* PrintPlugin.cpp */; };
+		9AF65CFE197B08D30002A688 /* PrintPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AF65CFC197B08D30002A688 /* PrintPlugin.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AF65CF7197B08BF0002A688 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AF65CC7197B02AE0002A688 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AF65CDC197B02C00002A688;
+			remoteInfo = Plugin1;
+		};
+		9AF65CF9197B08C10002A688 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AF65CC7197B02AE0002A688 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AF65CE4197B02C60002A688;
+			remoteInfo = Plugin2;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9AF65CCD197B02AE0002A688 /* CopyFiles */ = {
@@ -25,10 +47,33 @@
 /* Begin PBXFileReference section */
 		9AF65CCF197B02AE0002A688 /* C++Plugins */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++Plugins"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF65CD2197B02AE0002A688 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9AF65CDD197B02C00002A688 /* libPlugin1.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libPlugin1.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AF65CE5197B02C60002A688 /* libPlugin2.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libPlugin2.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AF65CE9197B02D20002A688 /* Plugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Plugin.cpp; sourceTree = "<group>"; };
+		9AF65CEA197B02D20002A688 /* Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plugin.h; sourceTree = "<group>"; };
+		9AF65CF0197B06CF0002A688 /* NamePlugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NamePlugin.cpp; sourceTree = "<group>"; };
+		9AF65CF1197B06CF0002A688 /* NamePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NamePlugin.h; sourceTree = "<group>"; };
+		9AF65CF4197B086B0002A688 /* MyPluginInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPluginInterface.h; sourceTree = "<group>"; };
+		9AF65CFB197B08D30002A688 /* PrintPlugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PrintPlugin.cpp; sourceTree = "<group>"; };
+		9AF65CFC197B08D30002A688 /* PrintPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintPlugin.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9AF65CCC197B02AE0002A688 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF65CDA197B02C00002A688 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF65CE2197B02C60002A688 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				9AF65CD1197B02AE0002A688 /* C++Plugins */,
+				9AF65CEE197B06A90002A688 /* Plugin 1 */,
+				9AF65CEF197B06AF0002A688 /* Plugin 2 */,
 				9AF65CD0197B02AE0002A688 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				9AF65CCF197B02AE0002A688 /* C++Plugins */,
+				9AF65CDD197B02C00002A688 /* libPlugin1.dylib */,
+				9AF65CE5197B02C60002A688 /* libPlugin2.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,12 +106,68 @@
 		9AF65CD1197B02AE0002A688 /* C++Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				9AF65CD2197B02AE0002A688 /* main.cpp */,
+				9AF65CF5197B089D0002A688 /* Plugin */,
+				9AF65CF6197B08A50002A688 /* Sample */,
 			);
 			path = "C++Plugins";
 			sourceTree = "<group>";
 		};
+		9AF65CEE197B06A90002A688 /* Plugin 1 */ = {
+			isa = PBXGroup;
+			children = (
+				9AF65CF1197B06CF0002A688 /* NamePlugin.h */,
+				9AF65CF0197B06CF0002A688 /* NamePlugin.cpp */,
+			);
+			path = "Plugin 1";
+			sourceTree = "<group>";
+		};
+		9AF65CEF197B06AF0002A688 /* Plugin 2 */ = {
+			isa = PBXGroup;
+			children = (
+				9AF65CFC197B08D30002A688 /* PrintPlugin.h */,
+				9AF65CFB197B08D30002A688 /* PrintPlugin.cpp */,
+			);
+			path = "Plugin 2";
+			sourceTree = "<group>";
+		};
+		9AF65CF5197B089D0002A688 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				9AF65CEA197B02D20002A688 /* Plugin.h */,
+				9AF65CE9197B02D20002A688 /* Plugin.cpp */,
+			);
+			name = Plugin;
+			sourceTree = "<group>";
+		};
+		9AF65CF6197B08A50002A688 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				9AF65CF4197B086B0002A688 /* MyPluginInterface.h */,
+				9AF65CD2197B02AE0002A688 /* main.cpp */,
+			);
+			name = Sample;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9AF65CDB197B02C00002A688 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AF65CF3197B06CF0002A688 /* NamePlugin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF65CE3197B02C60002A688 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AF65CFE197B08D30002A688 /* PrintPlugin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		9AF65CCE197B02AE0002A688 /* C++Plugins */ = {
@@ -76,11 +181,47 @@
 			buildRules = (
 			);
 			dependencies = (
+				9AF65CFA197B08C10002A688 /* PBXTargetDependency */,
+				9AF65CF8197B08BF0002A688 /* PBXTargetDependency */,
 			);
 			name = "C++Plugins";
 			productName = "C++Plugins";
 			productReference = 9AF65CCF197B02AE0002A688 /* C++Plugins */;
 			productType = "com.apple.product-type.tool";
+		};
+		9AF65CDC197B02C00002A688 /* Plugin1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AF65CDE197B02C00002A688 /* Build configuration list for PBXNativeTarget "Plugin1" */;
+			buildPhases = (
+				9AF65CD9197B02C00002A688 /* Sources */,
+				9AF65CDA197B02C00002A688 /* Frameworks */,
+				9AF65CDB197B02C00002A688 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Plugin1;
+			productName = Plugin1;
+			productReference = 9AF65CDD197B02C00002A688 /* libPlugin1.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		9AF65CE4197B02C60002A688 /* Plugin2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AF65CE6197B02C60002A688 /* Build configuration list for PBXNativeTarget "Plugin2" */;
+			buildPhases = (
+				9AF65CE1197B02C60002A688 /* Sources */,
+				9AF65CE2197B02C60002A688 /* Frameworks */,
+				9AF65CE3197B02C60002A688 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Plugin2;
+			productName = Plugin2;
+			productReference = 9AF65CE5197B02C60002A688 /* libPlugin2.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,6 +233,12 @@
 				ORGANIZATIONNAME = "Rogiel Sulzbach";
 				TargetAttributes = {
 					9AF65CCE197B02AE0002A688 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					9AF65CDC197B02C00002A688 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					9AF65CE4197B02C60002A688 = {
 						CreatedOnToolsVersion = 6.0;
 					};
 				};
@@ -109,6 +256,8 @@
 			projectRoot = "";
 			targets = (
 				9AF65CCE197B02AE0002A688 /* C++Plugins */,
+				9AF65CDC197B02C00002A688 /* Plugin1 */,
+				9AF65CE4197B02C60002A688 /* Plugin2 */,
 			);
 		};
 /* End PBXProject section */
@@ -118,11 +267,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF65CED197B04F30002A688 /* Plugin.cpp in Sources */,
 				9AF65CD3197B02AE0002A688 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AF65CD9197B02C00002A688 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AF65CF2197B06CF0002A688 /* NamePlugin.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AF65CE1197B02C60002A688 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AF65CFD197B08D30002A688 /* PrintPlugin.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AF65CF8197B08BF0002A688 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AF65CDC197B02C00002A688 /* Plugin1 */;
+			targetProxy = 9AF65CF7197B08BF0002A688 /* PBXContainerItemProxy */;
+		};
+		9AF65CFA197B08C10002A688 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AF65CE4197B02C60002A688 /* Plugin2 */;
+			targetProxy = 9AF65CF9197B08C10002A688 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9AF65CD4197B02AE0002A688 /* Debug */ = {
@@ -213,6 +392,54 @@
 			};
 			name = Release;
 		};
+		9AF65CDF197B02C00002A688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9AF65CE0197B02C00002A688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9AF65CE7197B02C60002A688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9AF65CE8197B02C60002A688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -230,6 +457,22 @@
 			buildConfigurations = (
 				9AF65CD7197B02AE0002A688 /* Debug */,
 				9AF65CD8197B02AE0002A688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9AF65CDE197B02C00002A688 /* Build configuration list for PBXNativeTarget "Plugin1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AF65CDF197B02C00002A688 /* Debug */,
+				9AF65CE0197B02C00002A688 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9AF65CE6197B02C60002A688 /* Build configuration list for PBXNativeTarget "Plugin2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AF65CE7197B02C60002A688 /* Debug */,
+				9AF65CE8197B02C60002A688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
